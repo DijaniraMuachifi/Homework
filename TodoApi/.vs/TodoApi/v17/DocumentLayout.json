@@ -1,0 +1,184 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Homeworks\\TodoApi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{37E29841-2954-40BD-A3AE-44BA2B960924}|TodoApi\\TodoApi.csproj|c:\\homeworks\\todoapi\\todoapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{37E29841-2954-40BD-A3AE-44BA2B960924}|TodoApi\\TodoApi.csproj|solutionrelative:todoapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37E29841-2954-40BD-A3AE-44BA2B960924}|TodoApi\\TodoApi.csproj|c:\\homeworks\\todoapi\\todoapi\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{37E29841-2954-40BD-A3AE-44BA2B960924}|TodoApi\\TodoApi.csproj|solutionrelative:todoapi\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37E29841-2954-40BD-A3AE-44BA2B960924}|TodoApi\\TodoApi.csproj|c:\\homeworks\\todoapi\\todoapi\\wwwroot\\index.html||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37E29841-2954-40BD-A3AE-44BA2B960924}|TodoApi\\TodoApi.csproj|solutionrelative:todoapi\\wwwroot\\index.html||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37E29841-2954-40BD-A3AE-44BA2B960924}|TodoApi\\TodoApi.csproj|c:\\homeworks\\todoapi\\todoapi\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{37E29841-2954-40BD-A3AE-44BA2B960924}|TodoApi\\TodoApi.csproj|solutionrelative:todoapi\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37E29841-2954-40BD-A3AE-44BA2B960924}|TodoApi\\TodoApi.csproj|c:\\homeworks\\todoapi\\todoapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37E29841-2954-40BD-A3AE-44BA2B960924}|TodoApi\\TodoApi.csproj|solutionrelative:todoapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37E29841-2954-40BD-A3AE-44BA2B960924}|TodoApi\\TodoApi.csproj|c:\\homeworks\\todoapi\\todoapi\\models\\todoitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37E29841-2954-40BD-A3AE-44BA2B960924}|TodoApi\\TodoApi.csproj|solutionrelative:todoapi\\models\\todoitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37E29841-2954-40BD-A3AE-44BA2B960924}|TodoApi\\TodoApi.csproj|c:\\homeworks\\todoapi\\todoapi\\controllers\\todoitemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37E29841-2954-40BD-A3AE-44BA2B960924}|TodoApi\\TodoApi.csproj|solutionrelative:todoapi\\controllers\\todoitemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37E29841-2954-40BD-A3AE-44BA2B960924}|TodoApi\\TodoApi.csproj|c:\\homeworks\\todoapi\\todoapi\\models\\todocontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37E29841-2954-40BD-A3AE-44BA2B960924}|TodoApi\\TodoApi.csproj|solutionrelative:todoapi\\models\\todocontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37E29841-2954-40BD-A3AE-44BA2B960924}|TodoApi\\TodoApi.csproj|c:\\homeworks\\todoapi\\todoapi\\models\\todoitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37E29841-2954-40BD-A3AE-44BA2B960924}|TodoApi\\TodoApi.csproj|solutionrelative:todoapi\\models\\todoitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Homeworks\\TodoApi\\TodoApi\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "TodoApi\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Homeworks\\TodoApi\\TodoApi\\Properties\\launchSettings.json",
+              "RelativeToolTip": "TodoApi\\Properties\\launchSettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-27T15:48:13.094Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Homeworks\\TodoApi\\TodoApi\\wwwroot\\index.html",
+              "RelativeDocumentMoniker": "TodoApi\\wwwroot\\index.html",
+              "ToolTip": "C:\\Homeworks\\TodoApi\\TodoApi\\wwwroot\\index.html",
+              "RelativeToolTip": "TodoApi\\wwwroot\\index.html",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAACsAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-10-27T15:41:41.608Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "site.js",
+              "DocumentMoniker": "C:\\Homeworks\\TodoApi\\TodoApi\\wwwroot\\js\\site.js",
+              "RelativeDocumentMoniker": "TodoApi\\wwwroot\\js\\site.js",
+              "ToolTip": "C:\\Homeworks\\TodoApi\\TodoApi\\wwwroot\\js\\site.js",
+              "RelativeToolTip": "TodoApi\\wwwroot\\js\\site.js",
+              "ViewState": "AQIAAF4AAAAAAAAAAAAowHwAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-10-27T15:40:56.491Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Homeworks\\TodoApi\\TodoApi\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "TodoApi\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Homeworks\\TodoApi\\TodoApi\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "TodoApi\\wwwroot\\css\\site.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-10-27T15:39:42.307Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TodoItemDTO.cs",
+              "DocumentMoniker": "C:\\Homeworks\\TodoApi\\TodoApi\\Models\\TodoItemDTO.cs",
+              "RelativeDocumentMoniker": "TodoApi\\Models\\TodoItemDTO.cs",
+              "ToolTip": "C:\\Homeworks\\TodoApi\\TodoApi\\Models\\TodoItemDTO.cs",
+              "RelativeToolTip": "TodoApi\\Models\\TodoItemDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T15:05:33.578Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TodoItemsController.cs",
+              "DocumentMoniker": "C:\\Homeworks\\TodoApi\\TodoApi\\Controllers\\TodoItemsController.cs",
+              "RelativeDocumentMoniker": "TodoApi\\Controllers\\TodoItemsController.cs",
+              "ToolTip": "C:\\Homeworks\\TodoApi\\TodoApi\\Controllers\\TodoItemsController.cs",
+              "RelativeToolTip": "TodoApi\\Controllers\\TodoItemsController.cs",
+              "ViewState": "AQIAAGIAAAAAAAAAAAAYwH0AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T14:55:58.928Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Homeworks\\TodoApi\\TodoApi\\Program.cs",
+              "RelativeDocumentMoniker": "TodoApi\\Program.cs",
+              "ToolTip": "C:\\Homeworks\\TodoApi\\TodoApi\\Program.cs",
+              "RelativeToolTip": "TodoApi\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T14:54:37.768Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TodoContext.cs",
+              "DocumentMoniker": "C:\\Homeworks\\TodoApi\\TodoApi\\Models\\TodoContext.cs",
+              "RelativeDocumentMoniker": "TodoApi\\Models\\TodoContext.cs",
+              "ToolTip": "C:\\Homeworks\\TodoApi\\TodoApi\\Models\\TodoContext.cs",
+              "RelativeToolTip": "TodoApi\\Models\\TodoContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T14:54:22.387Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "TodoItem.cs",
+              "DocumentMoniker": "C:\\Homeworks\\TodoApi\\TodoApi\\Models\\TodoItem.cs",
+              "RelativeDocumentMoniker": "TodoApi\\Models\\TodoItem.cs",
+              "ToolTip": "C:\\Homeworks\\TodoApi\\TodoApi\\Models\\TodoItem.cs",
+              "RelativeToolTip": "TodoApi\\Models\\TodoItem.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T14:53:46.03Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 99,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
