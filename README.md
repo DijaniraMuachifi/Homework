@@ -1,129 +1,131 @@
-# Homework
-# Tutorial: Criação de uma API da Web com ASP.NET Core
+# Tutorial: Creating a Web API with ASP.NET Core
+**Last Updated:** 08/23/2024  
+**Authors:** Rick Anderson and Kirk Larkin
 
-### Última atualização: 23/08/2024  
-**Autores:** Rick Anderson e Kirk Larkin
+This repository is a step-by-step guide to creating a web API using ASP.NET Core with a supporting database, focusing on controller-based APIs. For those interested in minimal APIs, see the [Tutorial: Create a Minimal API with ASP.NET Core](link to the minimal API tutorial).
 
-Este repositório é um guia passo a passo para criar uma API da Web utilizando **ASP.NET Core** com um banco de dados de apoio, focado em APIs baseadas em controladores. Para aqueles interessados em APIs mínimas, consulte o [Tutorial: Crie uma API mínima com o ASP.NET Core](link para o tutorial de API mínima).
+## Tutorial Structure
 
-### Estrutura do Tutorial
+### Overview
+This tutorial covers the creation of an API with the following routes:
 
-1. **Visão Geral**:  
-   Este tutorial cobre a criação de uma API com as seguintes rotas:
+- **GET /api/todoitems:** Returns all todo items
+- **GET /api/todoitems/{id}:** Returns a specific item
+- **POST /api/todoitems:** Adds a new item
+- **PUT /api/todoitems/{id}:** Updates an existing item
+- **DELETE /api/todoitems/{id}:** Deletes an item
 
-   - `GET /api/todoitems`: Retorna todos os itens de tarefas
-   - `GET /api/todoitems/{id}`: Retorna um item específico
-   - `POST /api/todoitems`: Adiciona um novo item
-   - `PUT /api/todoitems/{id}`: Atualiza um item existente
-   - `DELETE /api/todoitems/{id}`: Exclui um item
+A diagram describes the architecture of the app, demonstrating the flow between the client, controller, model, and data layer.
 
-   Um diagrama descreve a arquitetura do app, demonstrando o fluxo entre cliente, controlador, modelo e camada de dados.
+### Prerequisites
+- Visual Studio or Visual Studio Code (with ASP.NET and web development support)
+- Familiarity with ASP.NET Core and Entity Framework Core
 
-2. **Pré-requisitos**:
-   - Visual Studio ou Visual Studio Code (com o suporte para desenvolvimento ASP.NET e web)
-   - Familiaridade com ASP.NET Core e Entity Framework Core
+### Detailed Project Steps
 
-3. **Passos Detalhados do Projeto**:
-   - **Criação do Projeto Web**: Inicie um projeto ASP.NET Core Web API no Visual Studio.
-   - **Adicionar Pacotes NuGet**: Use o `Microsoft.EntityFrameworkCore.InMemory` para suportar um banco de dados em memória, ideal para testes e desenvolvimento inicial.
-   - **Testar o Projeto**: O projeto inclui uma API `WeatherForecast` para testes iniciais, acessível via Swagger.
+1. **Creating the Web Project:**
+   - Start an ASP.NET Core Web API project in Visual Studio.
 
-4. **Estrutura de Código**:
-   - **Classe de Modelo (`TodoItem`)**: A classe `TodoItem` representa a estrutura de um item de tarefa.
-   - **Contexto de Banco de Dados (`TodoContext`)**: Responsável por gerenciar o acesso ao banco de dados.
-   - **Configuração do `Program.cs`**: Registra o contexto do banco de dados e configura o Swagger para documentação automática da API.
+2. **Adding NuGet Packages:**
+   - Use `Microsoft.EntityFrameworkCore.InMemory` to support an in-memory database, ideal for testing and initial development.
 
-5. **Implementação do Controlador**:  
-   - Scaffold do controlador da API para incluir operações CRUD usando Entity Framework.
-   - **Método `PostTodoItem`**: Modificado para retornar um cabeçalho `Location` com o URI do novo item criado.
+3. **Testing the Project:**
+   - The project includes a WeatherForecast API for initial testing, accessible via Swagger.
 
-6. **Teste da API com Swagger**:
-   - Acesse `POST /api/TodoItems` para adicionar itens e `GET /api/TodoItems/{id}` para consultá-los.
-   - Os testes incluem verificações dos códigos de resposta HTTP, como o 201 para criação bem-sucedida.
+### Code Structure
 
-7. **Mais Informações**:
-   - Para uma visão geral sobre ASP.NET Core com Swagger e OpenAPI, consulte [Documentação ASP.NET Core](link para a documentação).
-  
+- **Model Class (TodoItem):** The `TodoItem` class represents the structure of a todo item.
+- **Database Context (TodoContext):** Responsible for managing database access.
+- **Program.cs Configuration:** Registers the database context and configures Swagger for automatic API documentation.
 
-### 1. **Pré-requisitos**
-   - Ter o MongoDB 6.0.5 ou superior instalado.
-   - Instalar o MongoDB Shell e configurar o acesso a partir da linha de comando.
-   - Ferramentas de desenvolvimento, como Visual Studio ou VS Code.
+### Controller Implementation
 
-### 2. **Configuração do MongoDB**
-   - Configurar o MongoDB para acesso local.
-   - Criar um banco de dados `BookStore` e uma coleção `Books`.
-   - Inserir dados de exemplo na coleção para testes iniciais.
+- Scaffold the API controller to include CRUD operations using Entity Framework.
+- **PostTodoItem Method:** Modified to return a Location header with the URI of the newly created item.
 
-### 3. **Criação do Projeto API com ASP.NET Core**
-   - No Visual Studio, criar um novo projeto do tipo **ASP.NET Core Web API** e selecionar a estrutura .NET 8.0.
-   - Instalar o pacote `MongoDB.Driver` para conectar-se ao MongoDB.
+### Testing the API with Swagger
+- Access **POST /api/TodoItems** to add items and **GET /api/TodoItems/{id}** to retrieve them.
+- The tests include checks for HTTP response codes, such as 201 for successful creation.
 
-### 4. **Definir o Modelo de Entidade**
-   - Criar um modelo `Book` em um novo diretório `Models`, com atributos específicos para MongoDB, como `BsonId` para a chave primária e `BsonElement` para personalizar os nomes das propriedades.
+### More Information
+For an overview of ASP.NET Core with Swagger and OpenAPI, see the [ASP.NET Core Documentation](link to the documentation).
 
-### 5. **Adicionar Configurações de Banco de Dados**
-   - Definir as configurações do banco de dados em `appsettings.json`, incluindo a string de conexão e o nome do banco e da coleção.
-   - Criar uma classe `BookStoreDatabaseSettings` para mapear as configurações e facilitar o uso do Dependency Injection (DI) para acessar essas configurações.
+---
 
-### 6. **Serviço de Operações CRUD**
-   - Criar a classe `BooksService` em um diretório `Services` para centralizar as operações de banco de dados. Essa classe implementa métodos para:
-     - **GetAsync**: Retorna todos os documentos.
-     - **GetAsync(id)**: Retorna um documento específico pelo ID.
-     - **CreateAsync**: Insere um novo documento.
-     - **UpdateAsync**: Atualiza um documento existente.
-     - **RemoveAsync**: Remove um documento pelo ID.
-   - Configurar o `BooksService` no contêiner de DI como singleton.
+## 1. Prerequisites
+- Have MongoDB 6.0.5 or higher installed.
+- Install the MongoDB Shell and configure access from the command line.
+- Development tools like Visual Studio or VS Code.
 
-### 7. **Controlador da API (BooksController)**
-   - Implementar um controlador `BooksController` no diretório `Controllers`.
-   - Criar endpoints para atender aos métodos HTTP **GET**, **POST**, **PUT** e **DELETE**:
-     - **GET /api/books**: Lista todos os livros.
-     - **GET /api/books/{id}**: Retorna um livro específico.
-     - **POST /api/books**: Adiciona um novo livro.
-     - **PUT /api/books/{id}**: Atualiza um livro.
-     - **DELETE /api/books/{id}**: Remove um livro.
+## 2. MongoDB Setup
+- Configure MongoDB for local access.
+- Create a `BookStore` database and a `Books` collection.
+- Insert sample data into the collection for initial testing.
 
-### 8. **Testar a API**
-   - Executar a API e testar os endpoints usando o navegador ou ferramentas como o Swagger.
+## 3. Creating the API Project with ASP.NET Core
+- In Visual Studio, create a new project of type ASP.NET Core Web API and select the .NET 8.0 framework.
+- Install the `MongoDB.Driver` package to connect to MongoDB.
 
-### 9. **Configuração de Serialização JSON**
-   - Ajustar a serialização JSON no `Program.cs` para que os nomes das propriedades no JSON sigam o formato Pascal Case, e modificar o nome da propriedade `BookName` para `Name`, aplicando `[JsonPropertyName("Name")]` na propriedade `BookName`.
+## 4. Define the Entity Model
+- Create a `Book` model in a new `Models` directory, with specific attributes for MongoDB, such as `BsonId` for the primary key and `BsonElement` to customize property names.
 
+## 5. Add Database Settings
+- Define database settings in `appsettings.json`, including the connection string and database and collection names.
+- Create a `BookStoreDatabaseSettings` class to map settings and facilitate the use of Dependency Injection (DI) for accessing these configurations.
 
+## 6. CRUD Operations Service
+- Create a `BooksService` class in a `Services` directory to centralize database operations. This class implements methods for:
+  - `GetAsync`: Returns all documents.
+  - `GetAsync(id)`: Returns a specific document by ID.
+  - `CreateAsync`: Inserts a new document.
+  - `UpdateAsync`: Updates an existing document.
+  - `RemoveAsync`: Removes a document by ID.
+- Configure the `BooksService` in the DI container as a singleton.
 
-### Principais etapas abordadas:
+## 7. API Controller (BooksController)
+- Implement a `BooksController` in the `Controllers` directory.
+- Create endpoints to handle HTTP GET, POST, PUT, and DELETE methods:
+  - **GET /api/books:** Lists all books.
+  - **GET /api/books/{id}:** Returns a specific book.
+  - **POST /api/books:** Adds a new book.
+  - **PUT /api/books/{id}:** Updates a book.
+  - **DELETE /api/books/{id}:** Removes a book.
 
-1. **Configuração do Projeto ASP.NET Core**: 
-   - Inicia a configuração do `Program.cs` para habilitar o serviço de arquivos estáticos e a base de dados em memória (usando Entity Framework com `InMemoryDatabase`).
-   - Inclui o uso de `DefaultFiles` e `StaticFiles` para permitir o uso de uma página HTML como ponto de entrada da aplicação.
+## 8. Testing the API
+- Run the API and test the endpoints using a browser or tools like Swagger.
 
-2. **Estrutura de Diretórios**:
-   - Criação de uma pasta `wwwroot` para armazenar arquivos estáticos, onde são criadas subpastas para `css` e `js`, além do arquivo HTML `index.html`.
+## 9. JSON Serialization Configuration
+- Adjust JSON serialization in `Program.cs` so that property names in JSON follow Pascal Case format, and modify the property name `BookName` to `Name`, applying `[JsonPropertyName("Name")]` to the `BookName` property.
 
-3. **HTML (index.html)**:
-   - Página HTML configurada para adicionar, editar e listar tarefas.
-   - Formulários para adicionar novas tarefas e editar tarefas existentes.
-   - Exibição de uma tabela dinâmica para listar os itens de tarefas com botões de `Editar` e `Excluir`.
+---
 
-4. **CSS (site.css)**:
-   - Estilos básicos para exibir a tabela de tarefas e ajustar o layout dos formulários e botões.
+### Key Steps Covered
 
-5. **JavaScript (site.js)**:
-   - Definição das funções CRUD utilizando `fetch` para interagir com a API:
-     - **GetItems**: Envia uma requisição GET para listar todas as tarefas.
-     - **AddItem**: Envia uma requisição POST para adicionar uma nova tarefa.
-     - **UpdateItem**: Envia uma requisição PUT para atualizar uma tarefa existente.
-     - **DeleteItem**: Envia uma requisição DELETE para excluir uma tarefa.
+#### ASP.NET Core Project Setup
+- Start the configuration in `Program.cs` to enable static file services and an in-memory database (using Entity Framework with `InMemoryDatabase`).
+- Include `DefaultFiles` and `StaticFiles` to allow the use of an HTML page as the entry point for the application.
 
-### Explicação dos Métodos CRUD:
-- **Leitura de Tarefas**: `fetch(uri)` realiza a busca dos itens e atualiza a página HTML chamando a função `_displayItems`.
-- **Adição de Tarefas**: Cria um objeto `item`, o converte em JSON, e o envia ao endpoint com método POST.
-- **Atualização de Tarefas**: Similar à adição, mas com um endpoint específico para o ID do item e usando o método PUT.
-- **Exclusão de Tarefas**: Configura o método DELETE para remover o item pelo seu ID.
+#### Directory Structure
+- Create a `wwwroot` folder to store static files, where subfolders for `css` and `js` are created, along with the HTML file `index.html`.
 
+#### HTML (index.html)
+- Configure an HTML page for adding, editing, and listing tasks.
+- Forms for adding new tasks and editing existing tasks.
+- Display a dynamic table to list todo items with Edit and Delete buttons.
 
+#### CSS (site.css)
+- Basic styles to display the todo table and adjust the layout of forms and buttons.
 
+#### JavaScript (site.js)
+- Define CRUD functions using `fetch` to interact with the API:
+  - `GetItems`: Sends a GET request to list all tasks.
+  - `AddItem`: Sends a POST request to add a new task.
+  - `UpdateItem`: Sends a PUT request to update an existing task.
+  - `DeleteItem`: Sends a DELETE request to remove a task.
 
+#### Explanation of CRUD Methods
+- **Reading Tasks:** `fetch(uri)` retrieves the items and updates the HTML page by calling the `_displayItems` function.
+- **Adding Tasks:** Creates a `item` object, converts it to JSON, and sends it to the endpoint with the POST method.
+- **Updating Tasks:** Similar to adding, but with a specific endpoint for the item's ID and using the PUT method.
+- **Deleting Tasks:** Configures the DELETE method to remove the item by its ID.
 
- 
